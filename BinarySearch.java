@@ -1,6 +1,6 @@
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] list = {-3, 1, 2, 4, 9, 23};
+        int[] list = {-3, 1, 2, 4, 9, 23};      // Значения должны быть упорядоченны
         System.out.println(binarySearch(list, 9));
     }
 
@@ -21,6 +21,6 @@ public class BinarySearch {
                 low = mid + 1;      // если искомое во второй половине
         }
 
-        return -low - 1; // Теперь high < low
+        return -1; // Теперь high < low
     }
 }
