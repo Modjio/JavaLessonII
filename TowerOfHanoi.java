@@ -14,12 +14,12 @@ public class TowerOfHanoi {
         System.out.println("Пошаговый алгоритм:");
         moveDisks(n, 'A', 'C', 'B');
         // Вывод количества вызовов рекурсии (формула: 2^n - 1)
-        System.out.println("Количество итераций " + i);
+        System.out.println("Количество вызовов рекурсий " + i);
     }
 
     // Находит решение для перемещения n дисков с fromTower на toTower с помощью auxTower
     public static void moveDisks(int n, char fromTower, char toTower, char auxTower) {
-        i++; // увеличиваем счетчик итераций
+        i++; // увеличиваем счетчик рекурсивного вызова
         if (n == 1) // простой случай
             System.out.println("Переместите диск " + n + " с " + fromTower + " на " + toTower);
         else {
