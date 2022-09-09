@@ -17,6 +17,10 @@ public class MaskingCardNumber {
         System.out.print("Введите номер карты для маскирования: ");
         cardNumber = input.nextLine();
 
+        maskCard(cardNumber);
+    }
+
+    public static void maskCard(String cardNumber) {
         System.out.print("Карта после маскирования: ");
 
         // Если чисел 4 и меньше
